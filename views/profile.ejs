@@ -1,0 +1,24 @@
+<%- include('header'); %>
+
+<nav>
+    <ul>
+        <% if(user!==undefined)  { %>
+            <li><a href="/auth/logout">Logout</a></li>
+            <% }  else { %>
+            <li><a href="/auth/login">Login</a></li>
+            <% } %>
+        <li><a href="/">Homepage</a></li>
+    </ul>
+</nav>
+ 
+<header>
+    <h1>Welcome to your Profile</h1>
+    <img style="display:inline" src="<%= user.thumbnail %>" >
+    <span><h2><%= user.username %></h2></span>
+    <p>
+        User Info:
+    </p>
+    <p>
+
+    </p>
+</header>

@@ -1,0 +1,21 @@
+<%- include('header'); %>
+    
+    <nav>
+        <ul>
+            <% if(user!==undefined)  { %>
+                <li><a href="/auth/logout">Logout</a></li>
+                <% }  else { %>
+                <li><a href="/auth/login">Login</a></li>
+                <% } %>
+                
+            <li><a href="/profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Net Ninja OAuth Tuts</h1>
+        <h2>HomePage</h2>
+    </header>
+
+</body>
+</html>
